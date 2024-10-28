@@ -45,6 +45,14 @@ After detecting toxic comments, the model rephrases them using **GPT-4o-mini**, 
 ### 3. **SHAP for Interpretability**
 To ensure transparency in the model's decisions, we use **SHAP** values to explain why certain words or phrases were flagged as toxic. This makes the model’s predictions more interpretable for moderators and users.
 
+## Evaluation
+The model's effectiveness in detecting and rephrasing toxic content is assessed using several standard metrics:
+
+**Accuracy**: Measures the overall percentage of correct predictions for both toxic and non-toxic comments.
+**Precision**: Indicates the model's ability to correctly identify toxic comments out of all the comments it labeled as toxic.
+**Recall**: Reflects the model's sensitivity in detecting all instances of toxic comments within the dataset.
+**F1 Score**: Combines precision and recall to provide a balanced score that evaluates the model's ability to detect toxicity accurately and reliably.
+**Support**: Refers to the number of actual occurrences of each label (toxic, non-toxic, etc.) in the dataset, providing context to the precision, recall, and F1 scores.
 
 
 ### Breakdown of Key Sections:
@@ -52,12 +60,9 @@ To ensure transparency in the model's decisions, we use **SHAP** values to expla
 2. **Features**: Highlights the unique aspects of the project, such as interpretability and rephrasing.
 3. **Dataset**: Information about the dataset used for training and testing.
 4. **Model Architecture**: Provides details on the architecture, including BERT, GPT-4o-mini, and SHAP for interpretability.
-5. **Installation**: Steps to clone the repository, install dependencies, and set up the environment.
-6. **Usage**: How to train the model, generate explanations, rephrase text, and evaluate the model.
-7. **Evaluation**: Lists the metrics used to evaluate the performance of the model.
-8. **Contributing**: Guidelines for contributing to the project.
-9. **License**: Specifies the license under which the project is distributed.
-10. **Acknowledgments**: Mentions key resources and libraries used.
+6. **Evaluation**: Lists the metrics used to evaluate the performance of the model.
+
+These metrics help us ensure that the model not only detects toxicity accurately but also effectively rephrases toxic language in a way that aligns with human evaluation. The metrics are computed on both the validation and test sets to provide a comprehensive assessment of model performance.
 
 This `README.md` file gives a comprehensive overview of the project and provides all necessary instructions for users to run the model, evaluate it, and contribute to the repository.
 
