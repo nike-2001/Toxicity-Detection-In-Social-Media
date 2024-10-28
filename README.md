@@ -8,6 +8,7 @@ This project aims to build a machine learning model that not only detects toxic 
 - [Features](#features)
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
+- [Evaluation](#evaluation)
 
 
 ## Introduction
@@ -48,11 +49,11 @@ To ensure transparency in the model's decisions, we use **SHAP** values to expla
 ## Evaluation
 The model's effectiveness in detecting and rephrasing toxic content is assessed using several standard metrics:
 
-**Accuracy**: Measures the overall percentage of correct predictions for both toxic and non-toxic comments.
-**Precision**: Indicates the model's ability to correctly identify toxic comments out of all the comments it labeled as toxic.
-**Recall**: Reflects the model's sensitivity in detecting all instances of toxic comments within the dataset.
-**F1 Score**: Combines precision and recall to provide a balanced score that evaluates the model's ability to detect toxicity accurately and reliably.
-**Support**: Refers to the number of actual occurrences of each label (toxic, non-toxic, etc.) in the dataset, providing context to the precision, recall, and F1 scores.
+1. **Accuracy**: Measures the overall percentage of correct predictions for both toxic and non-toxic comments.
+2. **Precision**: Indicates the model's ability to correctly identify toxic comments out of all the comments it labeled as toxic.
+3. **Recall**: Reflects the model's sensitivity in detecting all instances of toxic comments within the dataset.
+4. **F1 Score**: Combines precision and recall to provide a balanced score that evaluates the model's ability to detect toxicity accurately and reliably.
+5. **Support**: Refers to the number of actual occurrences of each label (toxic, non-toxic, etc.) in the dataset, providing context to the precision, recall, and F1 scores.
 
 
 ### Breakdown of Key Sections:
