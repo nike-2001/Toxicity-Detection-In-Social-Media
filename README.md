@@ -1,1 +1,67 @@
-# Toxicity-Detection
+# Toxicity Detection in Social Media
+
+This project aims to build a machine learning model that not only detects toxic behavior in social media comments but also rephrases harmful content into neutral or constructive language. The model is designed to identify various forms of toxicity such as hate speech, insults, and cyberbullying, while providing suggestions to foster better communication.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Evaluation](#evaluation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Toxic content on social media platforms is a growing concern, leading to harmful consequences such as harassment, bullying, and misinformation. This project leverages state-of-the-art transformer models like **BERT** to detect toxic comments and uses **GPT-4o-mini** to rephrase toxic text. We aim to mitigate the negative impacts of online toxicity by suggesting constructive rephrasings that retain the original intent while reducing harmful language.
+
+## Features
+
+- **Toxic Comment Detection**: Identifies various forms of toxicity in text, including hate speech, insults, and threats.
+- **Text Rephrasing**: Uses GPT-4o-mini to rephrase toxic comments into neutral or courteous forms.
+- **Interpretability**: Provides insights into model decisions using SHAP (SHapley Additive exPlanations).
+- **Custom Prompt-based Fine-tuning**: Fine-tuned BERT model for better performance on social media datasets.
+- **Human-in-the-loop Evaluation**: Enables human moderators to assess the fluency, message retention, and reduction in toxicity of rephrased content.
+
+## Dataset
+
+The project uses the **Jigsaw Toxic Comment Classification** dataset, available on [Kaggle](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge). The dataset includes user comments labeled with varying levels of toxicity, categorized into the following classes:
+- Toxic
+- Severe Toxic
+- Obscene
+- Threat
+- Insult
+- Identity Hate
+
+We have divided the dataset into 70% for training, 15% for validation, and 15% for testing.
+
+## Model Architecture
+
+### 1. **BERT for Toxicity Detection**
+The core of the toxicity detection model is based on **BERT (Bidirectional Encoder Representations from Transformers)**, which captures subtle nuances in toxic language by processing the text bidirectionally. We fine-tuned the BERT model specifically for our task using the Jigsaw dataset.
+
+### 2. **GPT-4o-mini for Text Rephrasing**
+After detecting toxic comments, the model rephrases them using **GPT-4o-mini**, an advanced text-generation model. It is prompted to retain the original message while reducing toxicity.
+
+### 3. **SHAP for Interpretability**
+To ensure transparency in the model's decisions, we use **SHAP** values to explain why certain words or phrases were flagged as toxic. This makes the model’s predictions more interpretable for moderators and users.
+
+
+
+### Breakdown of Key Sections:
+1. **Introduction**: Explains the goal of the project and its primary features (detection and rephrasing).
+2. **Features**: Highlights the unique aspects of the project, such as interpretability and rephrasing.
+3. **Dataset**: Information about the dataset used for training and testing.
+4. **Model Architecture**: Provides details on the architecture, including BERT, GPT-4o-mini, and SHAP for interpretability.
+5. **Installation**: Steps to clone the repository, install dependencies, and set up the environment.
+6. **Usage**: How to train the model, generate explanations, rephrase text, and evaluate the model.
+7. **Evaluation**: Lists the metrics used to evaluate the performance of the model.
+8. **Contributing**: Guidelines for contributing to the project.
+9. **License**: Specifies the license under which the project is distributed.
+10. **Acknowledgments**: Mentions key resources and libraries used.
+
+This `README.md` file gives a comprehensive overview of the project and provides all necessary instructions for users to run the model, evaluate it, and contribute to the repository.
+
