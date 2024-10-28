@@ -8,11 +8,7 @@ This project aims to build a machine learning model that not only detects toxic 
 - [Features](#features)
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Evaluation](#evaluation)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
