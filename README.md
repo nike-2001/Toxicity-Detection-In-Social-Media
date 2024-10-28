@@ -55,6 +55,7 @@ The model's effectiveness in detecting and rephrasing toxic content is assessed 
 4. **F1 Score**: Combines precision and recall to provide a balanced score that evaluates the model's ability to detect toxicity accurately and reliably.
 5. **Support**: Refers to the number of actual occurrences of each label (toxic, non-toxic, etc.) in the dataset, providing context to the precision, recall, and F1 scores.
 
+These metrics help us ensure that the model not only detects toxicity accurately but also effectively rephrases toxic language in a way that aligns with human evaluation. The metrics are computed on both the validation and test sets to provide a comprehensive assessment of model performance.
 
 ### Breakdown of Key Sections:
 1. **Introduction**: Explains the goal of the project and its primary features (detection and rephrasing).
@@ -63,7 +64,6 @@ The model's effectiveness in detecting and rephrasing toxic content is assessed 
 4. **Model Architecture**: Provides details on the architecture, including BERT, GPT-4o-mini, and SHAP for interpretability.
 6. **Evaluation**: Lists the metrics used to evaluate the performance of the model.
 
-These metrics help us ensure that the model not only detects toxicity accurately but also effectively rephrases toxic language in a way that aligns with human evaluation. The metrics are computed on both the validation and test sets to provide a comprehensive assessment of model performance.
 
 This `README.md` file gives a comprehensive overview of the project and provides all necessary instructions for users to run the model, evaluate it, and contribute to the repository.
 
